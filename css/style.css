@@ -37,11 +37,15 @@ section {
 }
 .half-width img {
   width: 80%;
+  transition: all 0.2s ease-in-out;
 }
-.color-orange {
+.half-width img:hover {
+  transform: scale(1.1);
+}
+.half-width .color-orange {
   color: var(--primary-color);
 }
-.link-button {
+.half-width .link-button {
   text-decoration: none;
   background: linear-gradient(var(--primary-color), var(--secondary-color));
   border-radius: 24px;
@@ -49,8 +53,13 @@ section {
   color: white;
   font-weight: 700;
   text-transform: uppercase;
+  cursor: pointer;
 }
-
+.link-button:hover {
+  box-shadow: -11px 13px 14px 0px rgba(224, 148, 64, 0.76);
+  -webkit-box-shadow: -11px 13px 14px 0px rgba(224, 148, 64, 0.76);
+  -moz-box-shadow: -11px 13px 14px 0px rgba(224, 148, 64, 0.76);
+}
 /* MEDIA QUERY */
 @media (max-width: 768px) {
   h1 {
@@ -60,10 +69,10 @@ section {
     font-size: 15px;
   }
   section {
-   height:50vh;
+    height: 50vh;
   }
-  .link-button{
-      font-weight: 400;
-      font-size: 15px;
+  .link-button {
+    font-weight: 400;
+    font-size: 15px;
   }
 }
