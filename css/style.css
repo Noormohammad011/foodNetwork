@@ -61,6 +61,14 @@ section {
   -webkit-box-shadow: -11px 13px 14px 0px rgba(224, 148, 64, 0.76);
   -moz-box-shadow: -11px 13px 14px 0px rgba(224, 148, 64, 0.76);
 }
+
+.banned-section{
+  background: url(../images/shapes/7.png) center /cover no-repeat;
+}
+.banned-section .half-width img{
+  height: 70%;
+  width: 60%;
+}
 /* MEDIA QUERY */
 @media (max-width: 768px) {
   h1 {
