@@ -62,12 +62,50 @@ section {
   -moz-box-shadow: -11px 13px 14px 0px rgba(224, 148, 64, 0.76);
 }
 
-.banned-section{
-  background: url(../images/shapes/7.png) center /cover no-repeat;
+.banned-section {
+  background: url(../images/shapes/7.png) center / cover no-repeat;
 }
-.banned-section .half-width img{
+.banned-section img {
   height: 70%;
   width: 60%;
+}
+
+#third {
+  display: flex;
+  height: 25vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#fourth {
+  /* overflow: hidden; */
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-evenly;
+  height: 50vh;
+}
+#card {
+  padding: 50px;
+  width: 33.33%;
+  border-radius: 5px;
+}
+#card:hover {
+  box-shadow: -14px 17px 10px -2px rgba(199, 199, 199, 0.51);
+  -webkit-box-shadow: -14px 17px 10px -2px rgba(199, 199, 199, 0.51);
+  -moz-box-shadow: -14px 17px 10px -2px rgba(199, 199, 199, 0.51);
+}
+#card img {
+  height: 60%;
+  width: 100%;
+}
+#card h2 {
+  margin-top: 3px;
+  margin-left: 5px;
+}
+#card p {
+  margin-top: 3px;
+  margin-left: 5px;
 }
 /* MEDIA QUERY */
 @media (max-width: 768px) {
@@ -79,9 +117,25 @@ section {
   }
   section {
     height: 60vh;
+    margin-bottom: 30px;
   }
   .link-button {
     font-weight: 400;
     font-size: 15px;
+  }
+  .banned-section img {
+    height: 70%;
+    width: 60%;
+    margin-left: 20px !important;
+  }
+  .banned-section h1 {
+    margin-top: 50px;
+  }
+  .banned-section .link-button {
+    padding: 10px 40px;
+    font-weight: 400;
+  }
+  #fourth {
+    flex-direction: column;
   }
 }
